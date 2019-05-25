@@ -1,0 +1,122 @@
+#include <iostream>
+#include <conio.h>
+#include <cmath>
+#include <math.h>
+using namespace std;
+
+	int one (int number1, int number2)
+	{
+		int sum;
+		sum = number1 + number2;
+		return sum;
+	}
+	
+	int two (int number1, int number2)
+	{
+		int difference;
+		difference = number1 - number2;
+		return difference;
+	}
+	
+	int three (int number1, int number2)
+	{
+		int product;
+		product = number1 * number2;
+		return product;
+	}
+	
+	int four (int number1, int number2)
+	{
+		int quotient;
+		quotient = number1 / number2;
+		return quotient;
+	}
+	int five (int number1, int number2)
+	{
+		int modulus;
+		modulus = number1 % number2;
+		return modulus;
+	}
+	
+int main()
+{
+		int number1, number2, num;
+		char cont = 'y';
+		
+		while (cont == 'y')
+		{
+			
+		cout<<"Choose among the 5: "<<endl;
+		cout<<"1. Add"<<endl;
+		cout<<"2. Subtract"<<endl;
+		cout<<"3. Multiply"<<endl;
+		cout<<"4. Divide"<<endl;
+		cout<<"5. Modulus"<<endl;
+		
+		cout<<endl;
+		cout<<"Enter your choice: ";
+		cin>>num;
+		cout<<endl;
+		cout<<"Enter your chosen two numbers: ";
+		cin>>number1;
+		cin>>number2;
+		cout<<endl;
+		
+		switch (num)
+		{
+			case 1:
+				{
+					cout<<"Result: "<<one(number1, number2)<<endl;
+					break;
+				}
+			case 2:
+				{
+					cout<<"Result: "<<two(number1, number2)<<endl;
+					break;
+				}
+			case 3:
+				{
+					cout<<"Result: "<<three(number1, number2)<<endl;
+					break;
+				}
+			case 4:
+				{
+					cout<<"Result: "<<four(number1, number2)<<endl;
+					break;
+				}
+			case 5:
+				{
+					cout<<"Result: "<<five(number1, number2)<<endl;
+				}
+			default:
+				{
+					cout<<"Invalid"<<endl;
+					break;
+				}
+		}
+		
+		cout<<"Want to continue?"<<endl;
+		cout<<"Press y"<<endl;
+		cin>>cont;
+		
+		switch (cont)
+		{
+			case 'y':
+				{
+					continue;
+				}
+				default:
+				{
+					break;
+				}
+		}
+			
+	}
+	
+_getch();
+return 0;
+}
+		
+		
+	
+	
